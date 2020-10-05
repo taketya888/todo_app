@@ -1,8 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router.js'
+import ElementUI from 'element-ui'
+import locale from 'element-ui/src/locale/lang/ja.js' 
+import 'element-ui/lib/theme-chalk/index.css' 
 
 Vue.config.productionTip = false
+
+Vue.use(ElementUI,{locale})
 
 new Vue({
   router,
